@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save # will check password match
+    if @user.save # will check password confirmation
       # User has been created
       # Log them in automatically
       session[:user_id] = @user.id
