@@ -5,5 +5,9 @@
 
     Log out <%= link_to "here", logout_path %>
 
+  <% else %>
+
+    Log in <%= link_to "here", new_session_path %>
+
   <% end %>
 </p>
