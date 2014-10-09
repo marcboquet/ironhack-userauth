@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'users/new'
+  # We will only be using new and create
+  resources :users
 
   # SessionsController is not backed by a model
   # but will behave as a model-backed one (CRUD)
